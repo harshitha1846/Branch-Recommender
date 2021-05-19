@@ -1,0 +1,469 @@
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<style>
+.q {
+	
+	font-size:20px;
+	
+}
+
+table {
+	margin-top:5%;
+    margin-left:10%;
+	
+	
+	
+}
+
+
+
+tr {
+	
+}
+
+#but {
+	width:100px;
+	background-color:skyblue;
+	border:0;
+	padding:10px;
+	margin:25px;
+}
+div.radio {
+	display:block;
+	margin:10px;
+	padding:7px;
+	}
+label:hover{
+	cursor:pointer;
+	}
+input:hover {
+	cursor:pointer;
+}
+h1 {
+	text-align:center;
+	font-family: 'Alatsi';
+}
+p {
+	text-align:center;
+	font-family: 'Bad Script';
+	
+}
+#headings {
+	background:skyblue;
+	padding : 10px;
+}
+</style>
+</head>
+<body>
+<div id=headings><h1>Branch Recommendation</h1>
+<p>Answer the following questions with care. Based on the given answers only we recommend you best branch<br>
+ It is neccessary to answer all questions before submitting them.</p></div>
+<form action='http://localhost:5000/submit',method="get">
+<table>
+
+
+<tr class='q'><td>
+1.Do you love computers?</td></tr>
+<tr><td>
+<div class='radio'><input type="radio"  name="ans1" id='1' value='yes' required><label for='1'>Yes</label></div>
+ <div class='radio'><input type="radio" name="ans1" id='2' value='no' ><label for='2'>No</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+2.Are u want to improve the quality and quantity of the available food?</td></tr>
+
+<tr><td>
+<div class='radio'><input type="radio"  name="ans2" id='3' value='yes' required><label for='3'>Yes</label></div>
+ <div class='radio'><input type="radio" name="ans2" id='4' value='no' ><label for='4'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+3.Do you have interest in geometry and trignometry?</td></tr>
+
+<tr><td>
+<div class='radio'><input type="radio"  name="ans3" id='5' value='yes' required><label for='5'>Yes</label></div>
+ <div class='radio'><input type="radio" name="ans3" id='6' value='no' ><label for='6'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+4.	Choose one: dbms,thermodynamics,molecular biology<br>
+a.	Database Management System (DBMS) is a software for storing and retrieving users' data while considering appropriate security measures.<br> 
+b.	Thermodynamics is the branch of physical science that deals with the relations between heat and other forms of energy (such as mechanical,
+ electrical, or chemical energy), and, by extension, of the relationships between all forms of energy.<br>
+c.	Molecular biology concerns the molecular basis of biological activity between the various systems of a cell, 
+including the interactions between the different types of DNA, RNA and proteins and their biosynthesis, and studies how these interactions are regulated.<br>
+
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans4" id='7' value='dbms' required><label for='7'>a</label></div>
+	<div class='radio'><input type="radio" name="ans4" id='8' value='thermodynamics' ><label for='8'>b</label></div>
+	<div class='radio'><input type="radio" name="ans4" id='9' value='molecular biology' ><label for='9'>c</label></div>
+	<div class='radio'><input type="radio" name="ans4" id='444' value='none' ><label for='444'>None</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+5.Are you fascinated with machines, its components and how they work?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans5" id='10' value='yes' required><label for='10'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans5" id='11' value='no' ><label for='11'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+6.What is your Grade in 12th physics?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans6" id='12' value='ex' required><label for='12'>Ex</label></div>
+	<div class='radio'><input type="radio" name="ans6" id='13' value='a' ><label for='13'>A</label></div>
+	<div class='radio'><input type="radio"  name="ans6" id='14' value='b' ><label for='14'>B</label></div>
+	<div class='radio'><input type="radio" name="ans6" id='15' value='c' ><label for='15'>C</label></div>
+	<div class='radio'><input type="radio"  name="ans6" id='16' value='d' ><label for='16'>D</label></div>
+	<div class='radio'><input type="radio" name="ans6" id='17' value='f' ><label for='17'>F</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+7.Do you interest in both hardware and software?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans7" id='18' value='yes' required><label for='18'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans7" id='19' value='no' ><label for='19'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+8.Are you interested in web development,Android app development?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans8" id='20' value='yes' required><label for='20'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans8" id='21' value='no' ><label for='21'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+9.	Choose one: os,engineering drawing,mechanics<br>
+a.	An Operating System (OS) is an interface between a computer user and computer hardware for example:windows,ubuntu,
+linux. In computer science os subject deals with how processes the program,different types of os’s etc<br>
+b.	An engineering drawing is a type of technical drawing that is used to convey information about an object<br>
+c.	Mechanics, science concerned with the motion of bodies under the action of forces, including the special case in which a body remains at rest.<br>
+
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans9" id='22' value='os' required><label for='22'>a</label></div>
+	<div class='radio'><input type="radio" name="ans9" id='23' value='engineering drawing' ><label for='23'>b</label></div>
+	<div class='radio'><input type="radio" name="ans9" id='24' value='mechanics' ><label for='24'>c</label></div>
+	<div class='radio'><input type="radio" name="ans9" id='241' value='none' ><label for='241'>None</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+10.Are u interested to work in steel and iron industries?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans10" id='25' value='yes' required><label for='25'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans10" id='26' value='no' ><label for='26'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+11.Do you want to work in biotechnology field?<br>
+Biotechnology is technology that utilizes biological systems, living organisms or parts of this to develop or create different products.
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans11" id='27' value='yes' required><label for='27'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans11" id='28' value='no' ><label for='28'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+12.ECE and EEE are not same? In which branch do you have interest?<br>
+EEE: In EEE, students have to study Electrical as well as Electronics. 
+It is the study and application of electrical systems for use in different environments and contains basic electronic courses and more power system.<br>
+
+ECE: Here, aspirants deal with Electronics with some part of communication. 
+The subject uses the scientific knowledge of the behaviour and effects of electrons to develop devices, systems, or equipment that uses electricity 
+as part of its driving force. Also it contains basics on electrical machines and more on integrated circuits and communication systems.<br>
+
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans12" id='29' value='ece' required><label for='29'>ECE</label></div>
+	<div class='radio'><input type="radio" name="ans12" id='30' value='eee' ><label for='30'>EEE</label></div>
+	<div class='radio'><input type="radio" name="ans12" id='121' value='none' ><label for='121'>None</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+13.Are you interested in the study of the physical and chemical behavior of metallic elements, their inter-metallic compounds, and their alloys?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans13" id='31' value='yes' required><label for='31'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans13" id='32' value='no' ><label for='32'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+14.Choose one: environmental studies, nano technology, kinematics<br>
+a.	Environmental studies is a multidisciplinary academic field which systematically studies human interaction with the environment.<br>
+b.	Nanotechnology is a field of research and innovation concerned with building 'things' - generally, materials and devices - on
+the scale of atoms and molecules. A nanometre is one-billionth of a metre: ten times the diameter of a hydrogen atom. The diameter of 
+a human hair is, on average, 80,000 nanometres.<br>
+
+c.	Kinematics is the branch of mechanics concerned with the motion of objects without reference to the forces which cause the motion<br>
+
+
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans14" id='33' value='environmental studies' required><label for='33'>a</label></div>
+	<div class='radio'><input type="radio" name="ans14" id='34' value='nano technology' ><label for='34'>b</label></div>
+	<div class='radio'><input type="radio" name="ans14" id='35' value='kinematics' ><label for='35'>c</label></div>
+	<div class='radio'><input type="radio" name="ans14" id='351' value='none' ><label for='351'>None</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+15.	Are you interested in working in manufacturing industries,maintenance industries?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans15" id='36' value='yes' required><label for='36'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans15" id='37' value='no' ><label for='37'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+16.	Are you interested in satellite communication?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans16" id='38' value='yes' required><label for='38'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans16" id='39' value='no' ><label for='39'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+17.	Are you interested in designing and construction of bridges ,roads, buildings ,dams pipelines?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans17" id='40' value='yes' required><label for='40'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans17" id='41' value='no' ><label for='41'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+18.	Are you interested in structural analysis etc?<br>
+Structural analysis is the determination of the effects of loads on physical structures and their components.
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans18" id='42' value='yes' required><label for='42'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans18" id='43' value='no' ><label for='43'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+19.	Do you have interest in electricity?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans19" id='44' value='yes' required><label for='44'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans19" id='45' value='no' ><label for='45'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+20.	Are you interested  about creating new drugs?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans20" id='46' value='yes' required><label for='46'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans20" id='47' value='no' ><label for='47'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+21.	Do you want to prove your imagination skills or prefer practical skills more?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans21" id='48' value='yes' required><label for='48'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans21" id='49' value='no' ><label for='49'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+22.	Do you have interest in ai,ml or robots?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans22" id='50' value='yes' required><label for='50'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans22" id='51' value='no' ><label for='51'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+23.	Are you interested in the study of objects and systems in motion?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans23" id='52' value='yes' required><label for='52'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans23" id='53' value='no' ><label for='53'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+24.	Choose one: telecommunicating,hydraulics,mineral beneficiation<br>
+a.	Telecommunication is the exchange of signs, signals, messages, words, writings, images and sounds or information
+ of any nature by wire, radio, optical or other electromagnetic systems.<br>
+b.	Hydraulics is mechanical function that operates through the force of liquid pressure. In hydraulics-based systems,
+ mechanical movement is produced by contained, pumped liquid, typically through cylinders moving pistons.<br>
+c.	Mineral beneficiation is a process by which valuable constituents of an ore are concentrated by means of a physical separation process.<br>
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans24" id='54' value='telecommunication' required><label for='54'>a</label></div>
+	<div class='radio'><input type="radio" name="ans24" id='55' value='hydraulics' ><label for='55'>b</label></div>
+	<div class='radio'><input type="radio" name="ans24" id='56' value='mineral beneficiation' ><label for='56'>c</label></div>
+	<div class='radio'><input type="radio" name="ans24" id='561' value='none' ><label for='561'>None</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+25.	Are you interested in chemistry?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans25" id='57' value='yes' required><label for='57'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans25" id='58' value='no' ><label for='58'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+26.	Do you want to get placement in campus?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans26" id='59' value='yes' required><label for='59'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans26" id='60' value='no' ><label for='60'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+27.	Choose one: data structures, chip designing, corrosion and surface engineering<br>
+a.	In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification.<br>
+b.	Integrated circuit design, or IC design, is a subset of electronics engineering, encompassing the 
+particular logic and circuit design techniques required to design integrated circuits, or ICs.<br>
+c.	Wear and corrosion are the major causes of degradation of engineering components for structural applications. 
+Among different ways of minimizing the probability of failure of components by wear
+or corrosion or improving its lifetime is by optimum designing of surface, may be termed as surface engineering. <br>
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans27" id='61' value='data structures' required><label for='61'>a</label></div>
+	<div class='radio'><input type="radio" name="ans27" id='62' value='chip designing' ><label for='62'>b</label></div>
+	<div class='radio'><input type="radio" name="ans27" id='63' value='corrosion and surface engineering' ><label for='63'>c</label></div>
+	<div class='radio'><input type="radio" name="ans27" id='631' value='none' ><label for='631'>None</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+28.	Do you ever wonder about how these work?<br>
+i)	Turn on your tap to take a shower or drink clean water<br>
+ii)	Flick on your lights and open your refrigerator <br>
+iii)	Drive to work on roads and bridges through synchronized traffic lights<br>
+iv)	Take mass transit or take a flight for a vacation<br>
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans28" id='64' value='yes' required><label for='64'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans28" id='65' value='no' ><label for='65'>No</label></div>
+
+</td>
+</tr>
+<tr class='q'>
+<td>
+29.	Are u interested in fuels?
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans29" id='66' value='yes' required><label for='66'>Yes</label></div>
+	<div class='radio'><input type="radio" name="ans29" id='67' value='no' ><label for='67'>No</label></div>
+</td>
+</tr>
+<tr class='q'>
+<td>
+30.	Choose one: smart grid and power electronics, fundamentals of heat and transfer,   Mechanical Behaviour and Testing of Materials<br>
+a.	Power Electronics in Smart Grid. ... Through smart grid implementation, monitoring, control and real time measurement of generation,
+ transmission and distribution of electrical energy has become possible and hence reliability of electric supply is improved.<br>
+b.	The fundamental modes of heat transfer are: Advection. Advection is the transport mechanism of a fluid from one location to another, 
+and is dependent on motion and momentum of that fluid. Conduction or diffusion. The transfer of energy between objects that are in physical contact.<br>
+c.	It provides an insight into the mechanical behaviour and testing of metals, polymers, ceramics and composites, which are widely employed for 
+structural applications under varying loads, temperatures and environments. <br>
+</td>
+</tr>
+<tr>
+<td>
+	<div class='radio'><input type="radio"  name="ans30" id='68' value='smart grid and power electronics' required><label for='68'>a</label></div>
+	<div class='radio'><input type="radio" name="ans30" id='69' value='fundamentals of heat and transfer' ><label for='69'>b</label></div>
+	<div class='radio'><input type="radio" name="ans30" id='70' value='Mechanical Behaviour and Testing of Materials' ><label for='70'>c</label></div>
+	<div class='radio'><input type="radio" name="ans30" id='701' value='none' ><label for='701'>None</label></div>
+
+</td>
+</tr>
+</table>
+<p><input type=submit id='but'></p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Battambang' rel='stylesheet'>
+<style>
+div {
+
+	position:absolute;
+	top:35%;
+	left:32%;
+	font-size:30px;
+}
+h1 {
+	text-align:center;
+	font-family: 'Alatsi';
+}
+p {
+	font-size:30px;
+	text-align:center;
+	font-family: 'Battambang';
+	
+}
+div.branch {
+	font-family: 'Alatsi';
+	font-size: 30px;
+	}
+#bye {
+	position:absolute;
+	top:50%;
+	left:35%;
+	text-align:center;
+	font-family: 'Battambang';
+}
+a {
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
+button {
+	padding:10px;
+	position:absolute;
+	top:70%;
+	left:45%;
+	background:skyblue;
+}
+	
+</style>
+</head>
+<body>
+<h1>Branch Recommendation</h1>
+<p>Based on the answers provided,we recommend you</p>
+	{% if prediction == 0%}
+		<div class='branch'>CHEMICAL ENGINEERING</div>
+	{% elif prediction == 1%}
+		<div class='branch'>CIVIL ENGINEERING</div>
+	{% elif prediction == 2%}
+		<div class='branch'>COMPUTER SCIENCE ENGINEERING</div>
+	{% elif prediction == 3%}
+		<div class='branch'>ELECTRONICS AND COMMUNICATION<br>ENGINEERING</div>
+	{% elif prediction == 4%}
+		<div class='branch'>MECHANICAL ENGINEERING</div>
+	{% elif prediction == 5%}
+		<div class='branch'>METALLURGICAL AND MATERIALS ENGINEERING</div>
+	{% else %}
+			`<div class='branch'>something is wrong <br/>sorry for inconvienance</div>
+	{% endif %}
+
+<div id='bye'>Thank you for using our service</div>
+<button><a href='http://127.0.0.1:5000/'>Home</a></button>
+
+</body>
+</html>
